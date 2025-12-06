@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Maxx Overdose Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific layout fix for the Origin Section */
+        .origin-section {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 50px;
+            align-items: center;
+            background: rgba(255,255,255,0.02);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid var(--border);
+        }
+        
+        /* FIX: Force alignment for the Special Card to ensure it doesn't look broken */
+        .hero-right .special-card {
+            margin-top: 24px !important; /* Forces a clean gap */
+            margin-left: 0 !important;   /* Removes any offset/overlap */
+            transform: none;             /* Resets any shifting */
+        }
+
+        @media (max-width: 768px) {
+            .origin-section { grid-template-columns: 1fr; }
+            .origin-order { order: -1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <a href="index.html" class="brand">☕ Maxx Overdose</a>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="process.html">Process</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="about.html">About</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <div class="hero">
+                <!-- Text Content -->
+                <div>
+                    <h1>Comfort in <br><span style="color:var(--accent)">every cup.</span></h1>
+                    <p style="font-size: 18px; margin-bottom: 30px; max-width: 480px;">
+                        At Maxx Overdose, we know a good cup of coffee can brighten your whole day. 
+                        Brewed fresh, crafted with love, and delivered straight to your door.
+                    </p>
+                    <a href="menu.html" class="btn">Order Now</a>
+                </div>
+
+                <!-- Right Visuals -->
+                <div class="hero-right">
+                    <div class="hero-img-box">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Coffee Aesthetic">
+                    </div>
+                    
+                    <a href="menu.html" class="special-card">
+                        <div>
+                            <div style="font-size: 11px; font-weight: 800; color: var(--accent); margin-bottom: 6px; letter-spacing: 2px;">TODAY'S SPECIAL</div>
+                            <div style="font-weight: 700; font-size: 22px; color: #fff;">Caramel Macchiato</div>
+                            <div style="font-size: 14px; color: var(--muted);">Rich espresso & vanilla syrup</div>
+                        </div>
+                        <div style="font-weight: 800; color: var(--accent); font-size: 22px;">₱175 &rarr;</div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Story Section -->
+            <section style="margin: 100px 0; text-align: center;">
+                <div class="feature-box" style="max-width: 800px; margin: 0 auto;">
+                    <h2 style="border-bottom: none; font-size: 36px; margin-bottom: 20px;">The Maxx Mission</h2>
+                    <p style="font-size: 18px; line-height: 1.9; margin-bottom: 30px;">
+                        We didn't just want to open another coffee shop; we wanted to create a jolt to the system. <strong>Maxx Overdose</strong> is built on the philosophy that there is no such thing as 'too much' when it comes to flavor and quality. Born from a craving for something stronger, we are here to fuel your grind, power your studies, and elevate your daily routine with high-octane comfort.
+                    </p>
+                    <a href="about.html" class="btn" style="background: transparent; border: 2px solid var(--accent); color: var(--accent); padding: 12px 30px;">Read Our Full History</a>
+                </div>
+            </section>
+
+            <!-- Origin Section -->
+            <section class="origin-section" style="margin-bottom: 100px;">
+                <div class="origin-order"> 
+                    <img src="cocoa.jpg" alt="Cacao Beans" style="width: 100%; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                </div>
+                <div>
+                    <h3 style="color: var(--accent); letter-spacing: 2px; font-size: 14px; margin-bottom: 10px;">THE SCIENCE OF FLAVOR</h3>
+                    <h2 style="margin-top: 0; color: #fff; font-size: 36px; margin-bottom: 20px;">Food of the Gods</h2>
+                    <p style="font-size: 17px; line-height: 1.8; margin-bottom: 20px;">
+                        Our cocoa beans are scientifically known as <em>Theobroma Cacao</em>, which literally translates to <strong>"Food of the Gods."</strong> Harvested by hand from the nutrient-rich volcanic soils of Mount Apo, we treat every pod with divine reverence. We avoid machines that could damage the delicate trees, ensuring only the most perfect beans make the cut.
+                    </p>
+                    <p style="font-size: 17px; line-height: 1.8;">
+                        The magic happens after the harvest. Our beans undergo a meticulous fermentation process - a crucial phase that unlocks deep, complex chocolate notes. Packed with mood-enhancing compounds like <strong>theobromine</strong> and rich antioxidants, our chocolate doesn't just taste good; it creates a natural high. This is the "Maxx Overdose" experience.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+            </div>
+            © 2025 Maxx Overdose Coffee Shop • Old Airport Drive, Sasa, Davao City
+        </footer>
+    </div>
+</body>
+</html>
